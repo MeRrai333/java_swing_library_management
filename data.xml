@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.11" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <string>c11</string>
+    </void>
+    <void method="add">
+     <string>c12</string>
+    </void>
+    <void method="add">
+     <string>c13</string>
+    </void>
+    <void method="add">
+     <string>c14</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <string>t21</string>
+    </void>
+    <void method="add">
+     <string>t22</string>
+    </void>
+    <void method="add">
+     <string>t23</string>
+    </void>
+    <void method="add">
+     <string>t24</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
