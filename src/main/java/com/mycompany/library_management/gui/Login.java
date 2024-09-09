@@ -38,6 +38,7 @@ public class Login extends javax.swing.JFrame {
         btLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Library management");
 
         Header.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         Header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
