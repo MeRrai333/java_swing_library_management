@@ -11,7 +11,7 @@ import com.mycompany.library_management.AccessFile;
  * @author User
  */
 public class Login extends javax.swing.JFrame {
-
+    private Dashboard dash;
     /**
      * Creates new form Login
      */
@@ -106,9 +106,9 @@ public class Login extends javax.swing.JFrame {
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         // TODO add your handling code here:
         if(tfUser.getText().equals("admin") && pfPass.getText().equals("password")){
-            Dashboard dash = new Dashboard();
+            this.dash = new Dashboard();
             this.setVisible(false);
-            dash.setVisible(true);
+            this.dash.setVisible(true);
         }
     }//GEN-LAST:event_btLoginActionPerformed
 

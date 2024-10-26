@@ -23,6 +23,8 @@ public class Dashboard extends javax.swing.JFrame {
     static String bookPath = "./save/books";
     static String categoryPath = "./save/category";
     
+    private javax.swing.JFrame popUpWindow;
+    
     private List<Book> listBook = new ArrayList<>();
     private List<Category> listCategory = new ArrayList<>();
     private int bookSelectIndex = -1;
@@ -347,7 +349,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_searchBarFocusLost
 
     private void addBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBookActionPerformed
-        new AddBook(listBook, this, this.listCategory).setVisible(true);
+        this.popUpWindow = new AddBook(listBook, this, this.listCategory);
+        this.popUpWindow.setVisible(true);
     }//GEN-LAST:event_addBookActionPerformed
 
     private void bookTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bookTableMouseClicked
@@ -426,7 +429,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_bookSaveBtnActionPerformed
 
     private void addCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCategoryActionPerformed
-        new AddCategory(this, this.listCategory).setVisible(true);
+        this.popUpWindow = new AddCategory(this, this.listCategory);
+        this.popUpWindow.setVisible(true);
     }//GEN-LAST:event_addCategoryActionPerformed
 
     private void bookStatusListItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_bookStatusListItemStateChanged
@@ -467,7 +471,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_categoryListItemStateChanged
 
     private void deleteCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCategoryActionPerformed
-        new deleteCategory(this, this.listCategory).setVisible(true);
+        this.popUpWindow = new deleteCategory(this, this.listCategory);
+        this.popUpWindow.setVisible(true);
     }//GEN-LAST:event_deleteCategoryActionPerformed
     
     private void readCategoryFile(){
